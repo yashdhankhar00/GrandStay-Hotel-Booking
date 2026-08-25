@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GrandStay | Rooms</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+    <div class="logo">Grand<span>Stay</span></div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="rooms.html" class="active">Rooms</a>
+        <a href="booking.html">Book Now</a>
+    </nav>
+
+    <a href="rooms.html" class="nav-btn">Book Your Stay</a>
+</header>
+
+
+<section class="page-header">
+
+    <p class="section-label">GRANDSTAY ACCOMMODATION</p>
+
+    <h1>Find your perfect <span>room.</span></h1>
+
+    <p>
+        Choose from our carefully designed rooms and suites.
+    </p>
+
+</section>
+
+
+<section class="rooms-section">
+
+    <!-- STANDARD ROOM -->
+
+    <div class="room-card">
+
+        <div class="room-image standard-room">
+            <div class="room-tag">POPULAR</div>
+        </div>
+
+        <div class="room-info">
+
+            <div class="room-title">
+                <div>
+                    <p class="room-type">GRANDSTAY ROOMS</p>
+                    <h2>Standard Room</h2>
+                </div>
+
+                <div class="price">
+                    <strong>₹3,500</strong>
+                    <small>/ night</small>
+                </div>
+            </div>
+
+            <p>
+                A comfortable and elegant room perfect for solo
+                travellers and couples.
+            </p>
+
+            <div class="room-features">
+                <span>🛏 King Bed</span>
+                <span>👤 2 Guests</span>
+                <span>📶 Free WiFi</span>
+                <span>❄ AC</span>
+            </div>
+
+            <button class="room-btn"
+                onclick="selectRoom('Standard Room', 3500)">
+                Book Now →
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- DELUXE ROOM -->
+
+    <div class="room-card">
+
+        <div class="room-image deluxe-room">
+            <div class="room-tag">PREMIUM</div>
+        </div>
+
+        <div class="room-info">
+
+            <div class="room-title">
+                <div>
+                    <p class="room-type">GRANDSTAY ROOMS</p>
+                    <h2>Deluxe Room</h2>
+                </div>
+
+                <div class="price">
+                    <strong>₹5,000</strong>
+                    <small>/ night</small>
+                </div>
+            </div>
+
+            <p>
+                Spacious interiors, premium furniture and a beautiful
+                city view for a luxurious stay.
+            </p>
+
+            <div class="room-features">
+                <span>🛏 King Bed</span>
+                <span>👤 3 Guests</span>
+                <span>🌆 City View</span>
+                <span>📶 Free WiFi</span>
+            </div>
+
+            <button class="room-btn"
+                onclick="selectRoom('Deluxe Room', 5000)">
+                Book Now →
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- SUITE -->
+
+    <div class="room-card">
+
+        <div class="room-image suite-room">
+            <div class="room-tag">LUXURY</div>
+        </div>
+
+        <div class="room-info">
+
+            <div class="room-title">
+                <div>
+                    <p class="room-type">GRANDSTAY SUITES</p>
+                    <h2>Grand Suite</h2>
+                </div>
+
+                <div class="price">
+                    <strong>₹8,000</strong>
+                    <small>/ night</small>
+                </div>
+            </div>
+
+            <p>
+                Our most luxurious accommodation with a separate living
+                area and premium services.
+            </p>
+
+            <div class="room-features">
+                <span>🛏 King Bed</span>
+                <span>👤 4 Guests</span>
+                <span>🛋 Living Room</span>
+                <span>⭐ Premium View</span>
+            </div>
+
+            <button class="room-btn"
+                onclick="selectRoom('Grand Suite', 8000)">
+                Book Now →
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    <div class="footer-logo">Grand<span>Stay</span></div>
+
+    <p>Luxury hospitality. Unforgettable experiences.</p>
+
+    <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="rooms.html">Rooms</a>
+        <a href="booking.html">Booking</a>
+    </div>
+
+    <p class="copyright">
+        © 2026 GrandStay Hotel. All rights reserved.
+    </p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

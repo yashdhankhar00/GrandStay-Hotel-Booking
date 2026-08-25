@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GrandStay | Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+    <div class="logo">Grand<span>Stay</span></div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="rooms.html">Rooms</a>
+        <a href="booking.html" class="active">Book Now</a>
+    </nav>
+
+    <a href="rooms.html" class="nav-btn">Change Room</a>
+</header>
+
+
+<section class="page-header booking-header">
+
+    <p class="section-label">GRANDSTAY RESERVATION</p>
+
+    <h1>Book your <span>stay.</span></h1>
+
+    <p>
+        Complete the form below to reserve your room.
+    </p>
+
+</section>
+
+
+<section class="booking-section">
+
+    <div class="booking-form-container">
+
+        <form id="bookingForm">
+
+            <div class="form-section">
+
+                <p class="form-label">01 — GUEST INFORMATION</p>
+
+                <div class="form-row">
+
+                    <div class="input-group">
+                        <label>Guest Name</label>
+                        <input
+                            type="text"
+                            id="guestName"
+                            placeholder="Enter your full name"
+                            required>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Email Address</label>
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="you@example.com"
+                            required>
+                    </div>
+
+                </div>
+
+
+                <div class="form-row">
+
+                    <div class="input-group">
+                        <label>Phone Number</label>
+                        <input
+                            type="tel"
+                            id="phone"
+                            placeholder="+91 98765 43210"
+                            required>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Number of Guests</label>
+
+                        <select id="guests" required>
+                            <option value="">Select guests</option>
+                            <option value="1">1 Guest</option>
+                            <option value="2">2 Guests</option>
+                            <option value="3">3 Guests</option>
+                            <option value="4">4 Guests</option>
+                        </select>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="form-section">
+
+                <p class="form-label">02 — YOUR STAY</p>
+
+                <div class="input-group">
+
+                    <label>Room</label>
+
+                    <select id="room" required>
+
+                        <option value="">Select a room</option>
+
+                        <option value="Standard Room|3500">
+                            Standard Room — ₹3,500/night
+                        </option>
+
+                        <option value="Deluxe Room|5000">
+                            Deluxe Room — ₹5,000/night
+                        </option>
+
+                        <option value="Grand Suite|8000">
+                            Grand Suite — ₹8,000/night
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-row">
+
+                    <div class="input-group">
+                        <label>Check-in</label>
+                        <input
+                            type="date"
+                            id="checkin"
+                            required>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Check-out</label>
+                        <input
+                            type="date"
+                            id="checkout"
+                            required>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <button type="submit" class="confirm-btn">
+                Confirm Booking →
+            </button>
+
+        </form>
+
+    </div>
+
+
+    <div class="booking-summary">
+
+        <p class="form-label">BOOKING SUMMARY</p>
+
+        <div class="summary-room">
+
+            <div class="summary-image"></div>
+
+            <div>
+                <p>SELECTED ROOM</p>
+                <h3 id="summaryRoom">Not selected</h3>
+            </div>
+
+        </div>
+
+        <div class="summary-line">
+            <span>Price / night</span>
+            <strong id="summaryPrice">₹0</strong>
+        </div>
+
+        <div class="summary-line">
+            <span>Number of nights</span>
+            <strong id="summaryNights">0</strong>
+        </div>
+
+        <div class="summary-total">
+            <span>Total</span>
+            <strong id="summaryTotal">₹0</strong>
+        </div>
+
+        <p class="secure-text">
+            🔒 Your booking information is secure.
+        </p>
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    <div class="footer-logo">Grand<span>Stay</span></div>
+
+    <p>Luxury hospitality. Unforgettable experiences.</p>
+
+    <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="rooms.html">Rooms</a>
+        <a href="booking.html">Booking</a>
+    </div>
+
+    <p class="copyright">
+        © 2026 GrandStay Hotel. All rights reserved.
+    </p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
